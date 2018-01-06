@@ -49,6 +49,9 @@ Plug 'easymotion/vim-easymotion'
 " improved search
 Plug 'haya14busa/incsearch.vim'
 
+" ctrl+p fast file open using ag silver searcher
+Plug 'ctrlpvim/ctrlp.vim'
+
 " JS identation and syntax plugin
 Plug 'pangloss/vim-javascript'
 " VueJS syntax plugin
