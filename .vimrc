@@ -1,4 +1,5 @@
 " spacevim theme install: bash <(curl -fsSL https://raw.githubusercontent.com/liuchengxu/space-vim/master/install.sh)
+" need to install ag silver searcher
 
 scriptencoding utf-8
 
@@ -64,5 +65,18 @@ let mapleader=","
 
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 map <Leader> <Plug>(easymotion-prefix)
+
+" ctrlP settings
+if executable('ag')
+  " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast, respects .gitignore and .agignore.
+  let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -f -g "" --ignore "\.git$\|\.hg$\|\.svn$"'
+else
+  " ctrl+p ignore files in .gitignore
+  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
+endif
