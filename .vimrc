@@ -53,6 +53,9 @@ Plug 'haya14busa/incsearch.vim'
 " ctrl+p fast file open using ag silver searcher
 Plug 'ctrlpvim/ctrlp.vim'
 
+" git changes
+Plug 'airblade/vim-gitgutter'
+
 " JS identation and syntax plugin
 Plug 'pangloss/vim-javascript'
 " VueJS syntax plugin
@@ -80,3 +83,4 @@ else
   " ctrl+p ignore files in .gitignore
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 endif
+
