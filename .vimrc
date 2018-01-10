@@ -56,6 +56,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 " git changes
 Plug 'airblade/vim-gitgutter'
 
+" surround words with symbol. example: ysiw' and ds'
+Plug 'tpope/vim-surround'
+
 " JS identation and syntax plugin
 Plug 'pangloss/vim-javascript'
 " VueJS syntax plugin
