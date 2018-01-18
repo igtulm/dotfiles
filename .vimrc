@@ -64,6 +64,9 @@ Plug 'pangloss/vim-javascript'
 " VueJS syntax plugin
 Plug 'posva/vim-vue'
 
+" clang-format for cpp
+Plug 'rhysd/vim-clang-format'
+
 
 call plug#end()
 
@@ -86,4 +89,7 @@ else
   " ctrl+p ignore files in .gitignore
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
 endif
+
+" clang format settings
+autocmd FileType c,h,cpp,hpp,cc,tcc ClangFormatAutoEnable
 
