@@ -53,6 +53,9 @@ Plug 'haya14busa/incsearch.vim'
 " ctrl+p fast file open using ag silver searcher
 Plug 'ctrlpvim/ctrlp.vim'
 
+" buffer explorer: be, bt, bs, bv
+Plug 'jlanzarotta/bufexplorer'
+
 " git changes
 Plug 'airblade/vim-gitgutter'
 
@@ -70,7 +73,7 @@ Plug 'rhysd/vim-clang-format'
 
 call plug#end()
 
-let mapleader=","
+let mapleader="\<Space>"
 
 autocmd vimenter * NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -92,4 +95,7 @@ endif
 
 " clang format settings
 autocmd FileType c,h,cpp,hpp,cc,tcc ClangFormatAutoEnable
+
+" buf explorer
+nnoremap <leader>b :BufExplorer<CR>
 
