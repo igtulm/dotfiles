@@ -130,5 +130,6 @@ export PATH=$PATH:$GOPATH/bin
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-export TERM=screen-256color-bce
+export TERM=screen-256color
+alias tmux='TERM=screen-256color tmux'
 
