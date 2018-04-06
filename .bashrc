@@ -133,3 +133,10 @@ export PATH=$PATH:$GOPATH/bin
 export TERM=screen-256color
 alias tmux='TERM=screen-256color tmux'
 
+export EDITOR=/usr/bin/vim
+
+export GOPATH=$HOME/go
+export GOBIN=$HOME/go/bin
+
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
