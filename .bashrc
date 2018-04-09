@@ -140,3 +140,6 @@ export GOBIN=$HOME/go/bin
 
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
+alias cmake='cmake -DCMAKE_C_COMPILER=${CC} -DCMAKE_CXX_COMPILER=${CXX}'
+
+alias ls='ls -lah'
