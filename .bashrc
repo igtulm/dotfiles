@@ -140,6 +140,31 @@ export GOBIN=$HOME/go/bin
 
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
-alias cmake='cmake -DCMAKE_C_COMPILER=${CC} -DCMAKE_CXX_COMPILER=${CXX}'
 
+# general purpose aliases
 alias ls='ls -lah'
+alias rld='. ~/.bashrc'
+
+# git aliases
+alias gst='git st'
+alias glg='git lg'
+alias gap='git add -p'
+alias gaA='git add .'
+alias gpl='git pull'
+alias gpr='git pull --rebase'
+alias gdf='git diff'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gpu='git push'
+alias gpf='git push -f'
+alias gcm='git commit -m'
+alias gtg='git tag -l | sort -V'
+alias grb='git rebase'
+alias grbc='git rebase --continue'
+alias grba='git rebase --abort'
+alias grbs='git rebase --skip'
+alias grbi='git rebase -i'
+alias gbr='git branch'
+alias gbrm='git branch -m'
+alias gbrd='git branch -d'
+alias gbrD='git branch -D'
