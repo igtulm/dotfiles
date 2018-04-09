@@ -142,7 +142,7 @@ export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
 
 # general purpose aliases
-alias ls='ls -lah'
+alias ls='ls -lAhF --color=auto --group-directories-first'
 alias rld='. ~/.bashrc'
 
 # git aliases
