@@ -5,3 +5,22 @@
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	st = status --short
+	ap = add -p
+	pl= pull
+	pr= pull --rebase
+	df= diff
+	co= checkout
+	cb= checkout -b
+	pu= push
+	pf= push -f
+	cm= commit -m
+	tg= tag -l | sort -V
+	rb= rebase
+	rbc= rebase --continue
+	rba= rebase --abort
+	rbs= rebase --skip
+	rbi= rebase -i
+	br= branch
+	brm= branch -m
+	brd= branch -d
+	brD= branch -D
