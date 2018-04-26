@@ -4,7 +4,7 @@
 
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-    lgo = log --oneline
+	l = log --oneline
 	st = status --short
 	ap = add -p
 	pl = pull
