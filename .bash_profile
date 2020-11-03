@@ -141,6 +141,9 @@ export GOBIN=$HOME/go/bin
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
 
-alias ls='ls -lAhF --color=auto --group-directories-first'
+alias ls='gls -lAhF --color=auto --group-directories-first'
 alias rld='. ~/.bashrc'
 alias g='git'
+
+PATH=$PATH:/usr/local/bin
+export BASH_SILENCE_DEPRECATION_WARNING=1
